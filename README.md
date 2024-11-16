@@ -1,1 +1,2 @@
 # javascript-practice
+1.JavaScript Program To Print Hello World2. JavaScript Program to Add Two Numbers3. JavaScript Program to Find the Square Root4. JavaScript Program to Calculate the Area of a Triangle5. JavaScript Program to Swap Two Variables6. Javascript Program to Solve Quadratic Equations7. JavaScript Program to Convert Kilometers to Miles8. Javascript Program to Convert Celsius to Fahrenheit9. Javascript Program to Generate a Random Number10. Javascript Program to Check if a number is Positive, Negative, or Zero 
