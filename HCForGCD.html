@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HCF or GCD</title>
+</head>
+<body>
+	<p>Greatest common divisior</p>
+	<p id="demo"></p>
+	<script>
+		let num1 = 16;
+		let num2 = 16;
+
+		// if(num1>num2){
+		// 	for(let i=num2; i > 0; i--){
+		// 		if(num1%i==0 && num2%i==0){
+		// 			document.getElementById("demo").innerHTML = i + " is the greatest common divisior.";
+		// 		}else{
+		// 			continue;
+		// 		}
+		// 	}
+		// } 
+		// else if(num2>num1){
+		// 	for(let i=num1; i > 0; i--){
+		// 		if(num1%i==0 && num2%i==0){
+		// 			document.getElementById("demo").innerHTML = i + " is the greatest common divisior.";
+		// 		}else{
+		// 			continue;
+		// 		}
+		// } else {
+		// 	document.getElementById("demo").innerHTML = num1;
+		// }
+
+		if(num2 > num1) {
+			for(let n = num1; n > 0; n--) {
+				if(num2%n==0 && num1%n==0){
+					document.getElementById("demo").innerHTML = n;
+					break;
+				} else {
+					continue;
+				}
+			}
+		} else if(num1 > num2) {
+			for(let n = num2; n > 0; n--) {
+				if(num2%n==0 && num1%n==0){
+					document.getElementById("demo").innerHTML = n;
+					break;
+				} else {
+					continue;
+				}
+			}
+		} else {
+			document.getElementById("demo").innerHTML = num1;
+		}
+
+
+	</script>
+</body>
+</html>

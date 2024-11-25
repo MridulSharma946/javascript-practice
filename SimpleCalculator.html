@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Simple Calculator</title>
+</head>
+<body>
+	<p>Enter two values and select the operation.</p>
+	<form>
+		<input type="number" id="num1">
+		<input type="number" id="num2"> 
+		<button onclick="add()">Addition</button>
+		<button onclick="sub()">Subtract</button>
+		<button onclick="multie()">Multiplication</button>
+		<button onclick="div()">Division</button>
+	</form>
+	
+	<p id="demo"></p>
+	<script>
+		let n1 = parseFloat(document.getElementById("num1").value);
+		let n2 = parseFloat(document.getElementById("num2").value);
+		function add(n1 , n2) {
+			let addition = n1+n2;
+			return addition;
+		}
+		document.getElementById("demo").innerHTML = addition;
+	</script>
+</body>
+</html>

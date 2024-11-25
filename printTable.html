@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Multiplication Table</title>
+</head>
+<body>
+	<p>Here is the multiplication table.</p>
+	<p id="demo"></p>
+	<script>
+		let number = 3;
+		let text = "";
+		for(let i=1 ; i<=10 ; i++) {
+			product = number*i
+			text += number + " * " + i +" : "+ product +"</br>";
+		}
+		document.getElementById("demo").innerHTML = text;
+	</script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Prime Number</title>
+	<p>Check wether the number is prime or not.</p>
+	<p id="demo"></p>
+</head>
+<body>
+<script>
+	//2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89 and 97.
+	let number = 1;
+	text = "";
+for(let i=1; i<=100 ; i++){
+
+	if(number == 2 || number == 3 || number == 5 || number == 7){
+		text = text + number + " is a prime number.</br>"
+	}
+	else if(number%2!=0 && number%3!=0 && number%5!=0 && number%7!=0){
+		text = text + number + "  is a prime number.</br>"
+	} else {
+		//text = text + number + " is not a prime number.</br>"
+	}
+	number++;
+}
+document.getElementById("demo").innerHTML = text;
+</script>
+</body>
+</html>
