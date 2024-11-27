@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>LCM</title>
+</head>
+<body>
+	<p>Least common multiple</p>
+	<p id="demo"></p>
+	<script>
+		//LCM = product / GCD
+
+		let num1 = 7;
+		let num2 = 35;
+
+		if(num2 > num1) {
+			for(let n = num1; n > 0; n--) {
+				if(num2%n==0 && num1%n==0){
+					GCD = n;
+					break;
+				} else {
+					continue;
+				}
+			}
+		} else if(num1 > num2) {
+			for(let n = num2; n > 0; n--) {
+				if(num2%n==0 && num1%n==0){
+					GCD = n;
+					break;
+				} else {
+					continue;
+				}
+			}
+		} else {
+			GCD = num1;
+		}
+
+
+		let LCM = (num1*num2)/GCD;
+		document.getElementById("demo").innerHTML = LCM;
+
+	</script>
+
+</body>
+</html>

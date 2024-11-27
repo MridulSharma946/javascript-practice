@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Factorial Recursion</title>
+</head>
+<body>
+	<p>Factorial Using Recursion</p>
+	<p id="demo"></p>
+	<script>
+		let num = 6;					
+		function fact(num) {
+			if(num==0){
+				return 1;
+			}
+			else {
+				return num*fact(num-1);
+			}
+		}
+		document.getElementById("demo").innerHTML = fact(num);
+	</script>
+</body>
+</html>

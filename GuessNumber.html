@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Guess Random Number</title>
+</head>
+<body>
+	<p>Guess random number between 1 to 10.</p>
+	<p id="demo1"></p>
+	<p id="demo2"></p>
+	<p id="demo3"></p>
+	<script>
+		let guessNumber = 5;
+		document.getElementById("demo1").innerHTML = guessNumber;
+		let randomNumber = Math.floor(Math.random() * 10) + 1;
+		document.getElementById("demo2").innerHTML = randomNumber;
+		if(guessNumber == randomNumber){
+			document.getElementById("demo3").innerHTML = "Great!!! You guessed it correct."
+		}
+	</script>
+</body>
+</html>

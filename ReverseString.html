@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Reverse String</title>
+</head>
+<body>
+	<p>This Program reverse the string.</p>
+	<p id="demo1"></p>
+	<p id="demo2"></p>
+	<script>
+		let string = "Hello My name is Sharma."
+
+		let newstring = string.split("");
+		let reversedstring = newstring.toReversed();
+		let fstring = reversedstring.join("");
+
+		document.getElementById("demo1").innerHTML = string;
+		document.getElementById("demo2").innerHTML = fstring;
+	</script>
+</body>
+</html>

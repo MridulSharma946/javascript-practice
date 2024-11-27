@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Create Object</title>
+</head>
+<body>
+	<p>Here are some ways to create a object.</p>
+	<p id="demo"></p>
+	<p id="demo1"></p>
+
+	<script>
+		const data = {
+			fname : "Mridul",
+			lname : "Sharma",
+			age : 21,
+			address : "Ganganagar"
+		};
+
+		const person = new Object();
+
+		person.fname = "Piyush";
+		person.lname = "Sharma";
+		person.age = 25;
+		person.address = "Hanumangarh";
+
+		document.getElementById("demo").innerHTML = data.fname +" "+ data["lname"];
+		document.getElementById("demo1").innerHTML = person.fname;
+	</script>
+
+</body>
+</html>

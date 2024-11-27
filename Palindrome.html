@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Palindrome</title>
+</head>
+<body>
+	<p>Check the given string is palindrome or not.</p>
+	<p id="demo"></p>
+	<script>
+		let string = "HELLOLLEH";
+
+		// for(let i = 0; i <= (string.length)/2 ; i ++){
+		// 	if(string[i] == string[n-i]){
+
+		// 	}
+		// }
+
+		//let rstring = string.reverse();
+
+		// if(string == rstring){
+		// 	document.getElementById("demo").innerHTML = "The given string is a Plaindrome"
+		// } else {
+		// 	document.getElementById("demo").innerHTML = "The given string is not a Palindrome"
+		// }
+
+		let newstring = string.split("");
+		let reversedstring = newstring.toReversed();
+		let fstring = reversedstring.join("");
+
+		if(string == fstring){
+			document.getElementById("demo").innerHTML = string + " This string is a palindrome.";
+		} else {
+			document.getElementById("demo").innerHTML = string + " This string is not a palindrome.";
+		}
+
+	</script>
+
+</body>
+</html>

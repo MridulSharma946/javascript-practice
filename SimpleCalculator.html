@@ -5,24 +5,47 @@
 </head>
 <body>
 	<p>Enter two values and select the operation.</p>
-	<form>
+
 		<input type="number" id="num1">
 		<input type="number" id="num2"> 
 		<button onclick="add()">Addition</button>
 		<button onclick="sub()">Subtract</button>
 		<button onclick="multie()">Multiplication</button>
 		<button onclick="div()">Division</button>
-	</form>
 	
 	<p id="demo"></p>
 	<script>
-		let n1 = parseFloat(document.getElementById("num1").value);
-		let n2 = parseFloat(document.getElementById("num2").value);
-		function add(n1 , n2) {
+		let n1;
+		let n2;
+		function add() {
+			getData();
 			let addition = n1+n2;
-			return addition;
+			 printData(addition);
 		}
-		document.getElementById("demo").innerHTML = addition;
+		function sub() {
+			getData();
+			let subtract = n1-n2;
+			 printData(subtract);
+		}
+		function multie() {
+			getData();
+			let multiply = n1*n2;
+			 printData(multiply);
+		}
+		function div() {
+			getData();
+			let divide = n1/n2;
+			 printData(divide);
+		}
+
+		function getData(){
+			n1 = Number(document.getElementById("num1").value);
+			n2 = Number(document.getElementById("num2").value);
+		}
+		function printData(data)
+		{
+		document.getElementById("demo").innerHTML = data;
+		}
 	</script>
 </body>
 </html>
