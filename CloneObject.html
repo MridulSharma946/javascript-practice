@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Clone Object</title>
+</head>
+<body>
+	<p>Cloning a object.</p>
+	<p id="demo"></p>
+	<script>
+		const person1 = {
+			fname : "Hello",
+			lname : "World",
+			age : 100,
+			address : "JavaScript"
+		};
+
+		const person2 = person1;
+
+		document.getElementById("demo").innerHTML = person2["lname"];
+	</script>
+</body>
+</html>

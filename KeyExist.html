@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Key Exist</title>
+</head>
+<body>
+	<p>This program check wether the given key exist in an object or not.</p>
+	<p id="demo"></p>
+	<script>
+		let string = "gender";
+		const person = {
+			fname : "Aman",
+			lname : "Sharma",
+			age : 27,
+			job : "Software Engineer"
+		};
+
+		let key = person[string];
+		if(key == undefined){
+			document.getElementById("demo").innerHTML = "The '"+ string +"' key is not available in object"	
+		} else {
+			document.getElementById("demo").innerHTML = person[string];
+		}
+		
+	</script>
+</body>
+</html>

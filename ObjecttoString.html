@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<p>Printing Object in a string.</p>
+	<p id="demo"></p>
+	<script>
+		const car = {
+			name : "Mahindra",
+			model : "XUV300",
+			capacity : 5 ,
+			year : 2022
+		};
+
+		let string = JSON.stringify(car);
+		// let array = string.split(",");
+		// let text = "";
+		// for(let i=0 ; i < array.length ; i++){
+		// 	text += array[i] + " </br>";
+		// }
+
+		document.getElementById("demo").innerHTML = string;
+	</script>
+</body>
+</html>

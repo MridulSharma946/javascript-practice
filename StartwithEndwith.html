@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Start End With</title>
+</head>
+<body>
+	<p>Start with or Ends with a certain character.</p>
+	<p id="string"></p>
+	<p id="start"></p>
+	<p id="end"></p>
+
+	<script>
+		let string = "My name is Mridul Sharma";
+
+		document.getElementById("string").innerHTML = string;
+		document.getElementById("start").innerHTML = "Starts with M : " + string.startsWith("M");
+		document.getElementById("end").innerHTML = "Ends with a : " + string.endsWith("a");		
+	</script>
+</body>
+</html>

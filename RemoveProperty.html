@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Remove Property</title>
+</head>
+<body>
+	<p>Remove a property from an Object.</p>
+	<p id="demo"></p>
+	<p id="demo1"></p>
+	<script>
+		const newObject = {
+			fname : "Mridul",
+			lname : "Sharma",
+			age : 21,
+			address : "SGNR"
+		};
+
+		document.getElementById("demo").innerHTML = "Before removing address property : " + newObject["address"];
+
+		delete newObject.address;
+
+		document.getElementById("demo1").innerHTML = "After removing address property : " + newObject["address"];
+	</script>
+</body>
+</html>

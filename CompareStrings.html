@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Comparing String</title>
+</head>
+<body>
+	<p>This checks in a string that is from a another string.</p>
+	<p id="demo"></p>
+
+	<script type="text/javascript">
+		let firststring = "Hello name is";
+		let string = "world my Hello name is something.";
+
+		let position = string.match(firststring);
+
+		document.getElementById("demo").innerHTML = position;
+
+
+
+	</script>
+</body>
+</html>
