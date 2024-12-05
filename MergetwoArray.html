@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Merge Array</title>
+</head>
+<body>
+	<p>This program merge two arrays and remove duplicates.</p>
+	<p id="arr1"></p>
+	<p id="arr2"></p>
+	<p id="mergedarray"></p>
+
+	<script type="text/javascript">
+		let arr1 = [1,2,3,4,5,6];
+		let arr2 = [2,4,6,8,10];
+
+		let mergedarray = [...arr1,...arr2];
+
+		let rmdup = new Set(mergedarray);
+
+		mergedarray = [...rmdup]
+		document.getElementById("arr1").innerHTML = arr1;
+		document.getElementById("arr2").innerHTML = arr2;
+
+		document.getElementById("mergedarray").innerHTML = mergedarray;
+	</script>
+</body>
+</html>

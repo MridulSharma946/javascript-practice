@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Array Contain Value</title>
+</head>
+<body>
+	<p>This check that the array contain specific value or not.</p>
+	<p id="arr"></p>
+	<p id="value"></p>
+	<p id="result"></p>
+
+	<script type="text/javascript">
+		const value = "e";
+
+		const arr = ['a','b','c','d'];
+		document.getElementById("arr").innerHTML = arr;
+
+		document.getElementById("value").innerHTML = "Value : " + value;
+
+		for(let i=0; i < arr.length; i++){
+			if(arr[i]==value){
+				document.getElementById("result").innerHTML = "Yes it contain.=> " + value;
+				break;
+			} else {
+				document.getElementById("result").innerHTML = "No it not contain. => " + value;
+			}
+		}
+	</script>
+</body>
+</html>

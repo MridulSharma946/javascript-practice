@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Sort by Property</title>
+</head>
+<body>
+	<p>Sort an array according to its properties.</p>
+	<p id="arr"></p>
+	<p id="sortedarr"></p>
+
+	<script type="text/javascript">
+		let fruits = [{name:"apple", color:"red",price:200},
+				   {name:"banana", color:"yellow",price:50},
+				   {name:"kiwi", color:"green",price:500},
+				   {name:"orange", color:"orange",price:100}];
+
+		//let sortprice = fruits.map(pr => pr.price);
+
+		let maxprice = fruits.reduce((max , fruit) => 
+									  fruit.price > max.price ?
+									  fruit : max);
+
+		document.getElementById("sortedarr").innerHTML = maxprice.price;
+		//console.log(maxprice.price);
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Random Value From Array</title>
+</head>
+<body>
+	<p>This give the random value from an array.</p>
+	<p id="arr"></p>
+	<p id="val"></p>
+
+	<script type="text/javascript">
+		const arr = [1,2,3,4,5,6,7,8,9,10];
+
+		let i = (Math.floor(Math.random()*10)).toFixed(0);
+		document.getElementById("arr").innerHTML = arr;
+
+		document.getElementById("val").innerHTML = arr[i];
+	</script>
+</body>
+</html>

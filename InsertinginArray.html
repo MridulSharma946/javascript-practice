@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Inserting in Array</title>
+</head>
+<body>
+	<p>Inserting a element in Array.</p>
+	<p id="before"></p>
+	<p id="element"></p>
+	<p id="after"></p>
+
+	<script type="text/javascript">
+		
+		let item = 'e';
+		const arr = ['a','b','c','d'];
+		document.getElementById("before").innerHTML = "Array before inserting element : " + arr;
+		document.getElementById("element").innerHTML = "Element : " + item;
+
+		arr.push(item);
+
+		document.getElementById("after").innerHTML = "Array after inserting element : " + arr;
+
+
+	</script>
+</body>
+</html>

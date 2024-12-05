@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Add In Array</title>
+</head>
+<body>
+	<p>Adding element at first position in an Array.</p>
+	<p id="before"></p>
+	<p id="element"></p>
+	<p id="after"></p>
+
+	<script type="text/javascript">
+		
+		let item = 'a';
+
+		let arr = ['b','c','d','e','f'];
+		document.getElementById("before").innerHTML = arr;
+
+		arr.unshift(item);
+
+		document.getElementById("after").innerHTML = arr;
+
+	</script>
+</body>
+</html>

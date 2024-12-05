@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Is object is an Array</title>
+</head>
+<body>
+	<p>This program check wether the object is an array or not.</p>
+	<p id="object"></p>
+	<p id="result"></p>
+
+	<script type="text/javascript">
+		const obj = ['a','b','c'];
+
+		let result = Array.isArray(obj);
+		document.getElementById("object").innerHTML = obj;
+
+		document.getElementById("result").innerHTML = result;
+	</script>
+</body>
+</html>

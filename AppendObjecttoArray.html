@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Append Object into Array</title>
+</head>
+<body>
+	<p>This program changes an object to an array.</p>
+	<p id="obj"></p>
+	<p id="arr"></p>
+
+	<script type="text/javascript">
+		const car = {
+			company : "BMW",
+			name : "XM",
+			colour : "Matte Black",
+			model : "SUV",
+			year : 2024,
+			price : "3.08 Cr",
+			transmission : "Manual",
+			fuel : "Petrol",
+			engine : "S68 Twin- turbocharged V8 Plug-in Hybrid",
+			power : "4395cc(653HP)",
+			torque : "650Nm",
+			airbag : 6,
+			gears : 8,
+			topspeed : "250 Kmpl",
+			tank_capacity : "69 litres"
+		};
+
+		//document.getElementById("obj").innerHTML = Object.values(car);
+		let text = "";
+		for (let [prop, value] of Object.entries(car)) {
+			text += prop + ": " + value + "<br>";
+		}
+		document.getElementById("obj").innerHTML = text;
+
+		const newcar = Object.values(car)
+
+		document.getElementById("arr").innerHTML = newcar;
+
+
+	</script>
+</body>
+</html>

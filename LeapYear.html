@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Leap Year</title>
+</head>
+<body>
+	<p>This program checks is this year is a leap year or not.</p>
+	<input type="number" id="year">
+	<button id="check" onclick="check()">Check</button>
+	<p id="demo1"></p>
+
+	<script type="text/javascript">
+		function check() {
+		let y = document.getElementById("year").value;
+
+			if (y%4 == 0) {
+				document.getElementById("demo1").innerHTML = y + " is a leap year."
+			} else {
+				document.getElementById("demo1").innerHTML = y + " is not a leap year."
+
+			}
+		}
+	</script>
+</body>
+</html>

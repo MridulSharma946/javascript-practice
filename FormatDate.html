@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Format Date</title>
+</head>
+<body>
+	<p>Formatting the Date</p>
+	<p id="currentdate"></p>
+	<p id="formatteddate"></p>
+
+	<script type="text/javascript">
+		let date = new Date();
+		document.getElementById("currentdate").innerHTML = date;
+
+		date = new Date("2025-01-05");
+		document.getElementById("formatteddate").innerHTML = date;
+
+
+	</script>
+</body>
+</html>

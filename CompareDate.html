@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Compare Date</title>
+</head>
+<body>
+	<p>This program compare two date.</p>
+	<p id="date1"></p>
+	<p id="date2"></p>
+	<p id="result"></p>
+	<script type="text/javascript">
+		let d1 = new Date();
+		let d2 = new Date();
+		document.getElementById("date1").innerHTML = "D1 : "+ d1;
+		document.getElementById("date2").innerHTML = "D2 : "+ d2;
+
+		if(d1 > d2){
+			document.getElementById("result").innerHTML = "D1 is greater than D2";
+		} else if (d2 > d1) {
+			document.getElementById("result").innerHTML = "D2 is greater than D1";	
+		} else {
+			document.getElementById("result").innerHTML = "D1 and D2 are EQUAL";	
+
+		}
+	</script>
+</body>
+</html>
