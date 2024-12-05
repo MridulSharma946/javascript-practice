@@ -58,3 +58,23 @@
 58. JavaScript Program to Encode a String to Base64
 59. JavaScript Program to Replace all Instances of a Character in a String
 60. JavaScript Program to Replace All Line Breaks with <br>
+61. JavaScript Program to Display Date and Time
+62. JavaScript Program to Check Leap Year
+63. JavaScript Program to Format the Date
+64. Javascript Program to Display Current Date
+65. JavaScript Program to Compare The Value of Two Dates
+66. JavaScript Program to Create Countdown Timer
+67. JavaScript Program to Remove Specific Item From an Array
+68. JavaScript Program to Check if An Array Contains a Specified Value
+69. JavaScript Program to Insert Item in an Array
+70. JavaScript Program to Append an Object to An Array
+71. JavaScript Program to Check if An Object is An Array
+72. JavaScript Program to Empty an Array
+73. JavaScript Program to Add Element to Start of an Array
+74. JavaScript Program to Remove Duplicates From Array
+75. JavaScript Program to Merge Two Arrays and Remove Duplicate Items
+76. JavaScript Program to Sort Array of Objects by Property Values
+77. JavaScript Program to Create Two Dimensional Array
+78. JavaScript Program to Extract Given Property Values from Objects as Array
+79. JavaScript Program to Compare Elements of Two Arrays
+80. JavaScript Program to Get Random Item From an Array
